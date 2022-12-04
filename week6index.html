@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .nav
+        {display:grid;
+            justify-items:start;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+
+        }
+        .nav-1 {
+            display:grid;
+            justify-items:start;
+        }
+        .logo
+        {grid-row-start: 1;
+        }
+        .name-1 {
+            grid-row-start: 1;
+            font-family: 'Raleway';
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 19px;
+letter-spacing: 0.1em;
+text-transform: uppercase;
+color: #000000;
+        }
+        .nav-2 {
+            font-family: 'Raleway';
+font-style: normal;
+font-weight: 400;
+font-size: 15px;
+line-height: 140%;
+letter-spacing: 0.02em;
+color: #6E9C9F;
+        }
+        .nav-3{
+            display:grid;
+            justify-items:start;
+        }
+        .nav-4{
+            display:grid;
+            justify-items:start;
+        }
+        .row-1 {
+            display:grid;
+            grid-row: 1;
+            grid-column: 1/2;
+            
+        }
+        .row-2{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows:  1fr ;
+        }
+        .h1{
+            font-family: 'Raleway';
+font-style: normal;
+font-weight: 500;
+font-size: 55px;
+line-height: 110%;
+letter-spacing: 0.02em;
+        }
+        .text1{
+            font-family: 'Raleway';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 140%;
+letter-spacing: 0.02em;
+        }
+        .clothes1 {
+            position: absolute;
+            right: 250px;
+        }
+        .clothes2 {
+            position: absolute;
+            left: 700px;
+            bottom: 60px;
+        }
+        .pictures{
+            background-color: #F1EADC;
+        }
+        .button-1{
+            display: flex;
+flex-direction: row;
+align-items: center;
+padding: 22px 50px;
+gap: 10px;
+width: 243px;
+height: 68px;
+background: #6E9C9F;
+color: white;
+        }
+.row-3{
+    display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows:  60px 2fr 1fr;
+}
+.h2 {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    font-family: 'Raleway';
+font-style: normal;
+font-weight: 500;
+font-size: 40px;
+line-height: 110%;
+letter-spacing: 0.02em;
+color: #000000;
+}
+.sales {
+    grid-row-start: 2;
+    grid-row-end: 4;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    justify-self:center;
+    align-content:space-around;
+}
+.purchase{
+    grid-row-start: 4;
+    grid-row-end: 4;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    justify-self:center;
+    align-content:space-around;
+}
+.footer {
+    height: 70px;
+    text-align: center;
+    background-color: #F1EADC;
+    
+}
+    </style>
+</head>
+<body>
+    <div class="row-1">
+    <header class="header"> 
+        <nav class="nav">
+            <div class="nav-1">
+                <div class="logo"> <img src="assets/images/Vector.svg" alt="logo"></div>
+                <div class="name-1">Womazing</div>
+            </div>
+            <div class="nav-2">
+                Главная Магазин О бренде Контакты
+            </div>
+            <div class="nav-3">
+                <img class="logo" src="assets/images/Vector1.svg" alt="phone">
+                <div class="name-1"> +7 000 000 00 00</div>
+            </div>
+            <div class="nav-4">
+                <img class="logo" src="assets/images/Vector2.svg" alt="bag">
+            </div>
+        </nav>
+    </header>
+    </div>
+    <main>
+        <section class="row-2">
+            <div><p class="h1">Новые поступления<br>
+                в этом сезоне </p> 
+                <p class="text1">Утонченные сочетания и бархатные <br> оттенки - вот то, что вы искали в этом <br> сезоне. Время исследовать.</p>
+            <button class="button-1">Открыть магазин</button>
+        </div>
+            <div class="pictures">
+                <img src="assets/images/dmitriy-7DD6tfTKqS4-unsplash 1.png" alt="clothes">
+                <img class="clothes1" src="assets/images/ionut-comanici-RDcEWH5hSDE-unsplash 1.png" alt="clothes1">
+                <img class="clothes2" src="assets/images/allef-vinicius-YG97wpX0OEg-unsplash 1.png" alt="clothes2">
+            </div>
+        </section>
+        <section class="row-3">
+            <div class="h2">Новая коллекция</div>
+            <div class="sales">
+                <img src="assets/images/brooke-cagle-h3vR1F8-caI-unsplash 1.png" alt="t-short"> <p>Футболка USA</p>
+                <img src="assets/images/christopher-campbell-va0YmkIFtPA-unsplash 1.png" alt="swimming"> <p>Купальник Glow</p>
+            </div>
+            <div class="purchase"><button class="button-1">Открыть магазин</button></div>
+        </section>
+    </main>
+    <footer class="footer">
+        <nav class="nav">
+            <div class="nav-1">
+                <div class="logo"> <img src="assets/images/Vector.svg" alt="logo"></div>
+                <div class="name-1">Womazing</div>
+            </div>
+            <div class="nav-2">
+                Главная Магазин О бренде Контакты
+            </div>
+            <div class="nav-3">
+                <img class="logo" src="assets/images/Vector1.svg" alt="phone">
+                <div class="name-1"> +7 000 000 00 00</div>
+            </div>
+            <div class="nav-4">
+                <img class="logo" src="assets/images/Vector2.svg" alt="bag">
+            </div>
+    </footer>
+</body>
+</html>
